@@ -288,7 +288,7 @@ export function AboutScreen({
         >
 
           <div className="mb-5 flex items-center gap-3">
-            <Sparkles className={styles.accent} size={20} />
+            <Star className={styles.accent} size={20} />
 
             <h3 className={`text-lg font-semibold ${styles.title}`}>
               Features
@@ -665,7 +665,7 @@ export function AboutScreen({
                 title: "Report a Bug",
               },
               {
-                icon: Sparkles,
+                icon: Star,
                 title: "Request a Feature",
               },
               {

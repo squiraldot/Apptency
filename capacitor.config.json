@@ -1,0 +1,8 @@
+{
+  "appId": "com.dotsturio.apptency",
+  "appName": "Apptency",
+  "webDir": "out",
+  "server": {
+    "androidScheme": "https"
+  }
+}

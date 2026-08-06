@@ -10,7 +10,6 @@ import {
   RefreshCw,
   Shield,
   Smartphone,
-  Github,
   Globe,
   Book,
   MessageCircle,
@@ -581,7 +580,7 @@ export function AboutScreen({
 
             {[
               {
-                icon: Github,
+                icon: Globe,
                 title: "GitHub",
                 subtitle: "Source Code & Releases",
               },

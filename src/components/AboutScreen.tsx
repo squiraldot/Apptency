@@ -419,7 +419,7 @@ export function AboutScreen({
           className={`rounded-3xl p-5 shadow-sm ${styles.card}`}
         >
           <div className="mb-5 flex items-center gap-3">
-            <RefreshCcw className={styles.accent} size={20} />
+            <RefreshCw className={styles.accent} size={20} />
 
             <h3 className={`text-lg font-semibold ${styles.title}`}>
               Updates

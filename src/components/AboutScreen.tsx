@@ -10,6 +10,7 @@ import {
   RefreshCw,
   Shield,
   Smartphone,
+  Github,
   Globe,
   Book,
   MessageCircle,
@@ -406,11 +407,6 @@ export function AboutScreen({
           </div>
         </section>
 
-        {/* ===============================
-            PART 1A END
-            PART 1B STARTS BELOW
-        ================================ */}
-```
                 {/* ===============================
             UPDATES
         ================================ */}
@@ -485,7 +481,7 @@ export function AboutScreen({
             <button
               className={`flex w-full items-center justify-center gap-2 rounded-2xl py-3 font-medium transition ${styles.button}`}
             >
-              <RefreshCcw size={18} />
+              <RefreshCw size={18} />
               Check for Updates
             </button>
 
@@ -595,7 +591,7 @@ export function AboutScreen({
                 subtitle: "Official Website",
               },
               {
-                icon: BookOpen,
+                icon: Book,
                 title: "Documentation",
                 subtitle: "User Guide",
               },

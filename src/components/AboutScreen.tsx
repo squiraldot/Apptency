@@ -161,7 +161,7 @@ export function AboutScreen({
         </div>
       </header>
 
-      <div className="space-y-5 p-4 pb-10">
+      <div className="space-y-5 p-4">
 
         {/* ===============================
             APP INFORMATION

@@ -1,3 +1,59 @@
 @import "tailwindcss";
 
 @variant dark (&:where(.dark, .dark *));
+
+@keyframes openSourceSlider {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+.opensource-slider {
+
+    display: flex;
+
+    align-items: center;
+
+    width: max-content;
+
+    animation: openSourceSlider 22s linear infinite;
+
+}
+
+.opensource-slider:hover {
+
+    animation-play-state: paused;
+
+}
+
+.opensource-card {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 74px;
+
+    height: 74px;
+
+    flex-shrink: 0;
+
+    margin-right: 16px;
+
+    border-radius: 20px;
+
+    background: rgb(39,39,42);
+
+}

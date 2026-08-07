@@ -139,40 +139,34 @@ export function AboutScreen({
   ];
 
   const ReactLogo = () => (
-  <svg
-    viewBox="0 0 256 256"
-    className="h-9 w-9"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="10"
-  >
-    <circle cx="128" cy="128" r="18" fill="currentColor" />
-    <ellipse cx="128" cy="128" rx="90" ry="36" />
-    <ellipse
-      cx="128"
-      cy="128"
-      rx="90"
-      ry="36"
-      transform="rotate(60 128 128)"
-    />
-    <ellipse
-      cx="128"
-      cy="128"
-      rx="90"
-      ry="36"
-      transform="rotate(120 128 128)"
-    />
+  <svg viewBox="0 0 256 256" className="h-9 w-9" fill="none">
+    <g stroke="currentColor" strokeWidth="10">
+      <ellipse cx="128" cy="128" rx="90" ry="35" />
+      <ellipse cx="128" cy="128" rx="90" ry="35" transform="rotate(60 128 128)" />
+      <ellipse cx="128" cy="128" rx="90" ry="35" transform="rotate(120 128 128)" />
+    </g>
+    <circle cx="128" cy="128" r="14" fill="currentColor" />
   </svg>
 );
 
   const NextLogo = () => (
-  <svg
-    viewBox="0 0 180 180"
-    className="h-9 w-9"
-    fill="currentColor"
-  >
-    <circle cx="90" cy="90" r="82" fill="none" stroke="currentColor" strokeWidth="10"/>
-    <path d="M60 55v70h10V78l48 47h12V55h-10v47L72 55z"/>
+  <svg viewBox="0 0 180 180" className="h-9 w-9">
+    <circle
+      cx="90"
+      cy="90"
+      r="82"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="8"
+    />
+    <path
+      d="M56 54V126L120 72V126"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -198,11 +192,11 @@ export function AboutScreen({
 
   const TailwindLogo = () => (
   <svg
-    viewBox="0 0 48 48"
+    viewBox="0 0 54 33"
     className="h-9 w-9"
     fill="currentColor"
   >
-    <path d="M24 14c-5 0-8 2-10 6 3-2 5-2 8-1 2 1 3 4 5 5 3 2 7 1 11-4-2 6-6 9-11 9-5 0-7-3-9-5-2-2-4-3-8 1 2-6 7-11 14-11z"/>
+    <path d="M27 0C19 0 14 4 12 12c3-4 7-5 12-2 3 2 5 7 9 8 5 2 10-1 15-8-2 10-9 15-17 15-8 0-12-4-15-8-2-3-5-4-10 1C8 7 16 0 27 0z"/>
   </svg>
 );
 
@@ -212,21 +206,21 @@ export function AboutScreen({
     className="h-9 w-9"
     fill="currentColor"
   >
-    <path d="M17 18h9l6 8 6-8h9L37 32l10 14h-9l-6-8-6 8h-9l10-14z"/>
+    <path d="M18 18h8l6 8 6-8h8L38 32l8 14h-8l-6-8-6 8h-8l8-14z"/>
   </svg>
 );
 
   const LucideLogo = () => (
   <svg
-    viewBox="0 0 64 64"
+    viewBox="0 0 24 24"
     className="h-9 w-9"
     fill="none"
     stroke="currentColor"
-    strokeWidth="5"
+    strokeWidth="2.2"
   >
-    <circle cx="32" cy="32" r="22"/>
-    <path d="M32 10v44"/>
-    <path d="M10 32h44"/>
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 3v18"/>
+    <path d="M3 12h18"/>
   </svg>
 );
 
@@ -236,7 +230,7 @@ export function AboutScreen({
     className="h-9 w-9"
     fill="currentColor"
   >
-    <path d="M22 8h20v10h-4v6h4v6h-4v6h4v6h-4v14H22z"/>
+    <path d="M24 6h16v10h-4v5h4v5h-4v5h4v5h-4v22H24z"/>
   </svg>
 );
 

@@ -756,7 +756,7 @@ export default function App() {
       <div className="relative w-full h-[100dvh] md:max-w-[410px] md:h-[830px] bg-white dark:bg-black rounded-none md:rounded-[42px] md:shadow-2xl overflow-hidden flex flex-col border-0 md:border-[10px] border-zinc-800 dark:border-zinc-900 z-10 transition-all">
         
         {/* Scrollable Active Screen Container */}
-        <div className={`flex-1 overflow-hidden relative ${appStyles.bg}`}>
+        <div className={`flex-1 relative ${appStyles.bg}`}>
           {renderMobileScreen()}
         </div>
 

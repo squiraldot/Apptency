@@ -139,13 +139,47 @@ export function AboutScreen({
   ];
 
   const ReactLogo = () => (
-  <svg viewBox="0 0 256 256" className="h-9 w-9" fill="none">
-    <g stroke="currentColor" strokeWidth="10">
-      <ellipse cx="128" cy="128" rx="90" ry="35" />
-      <ellipse cx="128" cy="128" rx="90" ry="35" transform="rotate(60 128 128)" />
-      <ellipse cx="128" cy="128" rx="90" ry="35" transform="rotate(120 128 128)" />
-    </g>
-    <circle cx="128" cy="128" r="14" fill="currentColor" />
+  <svg
+    viewBox="0 0 24 24"
+    className="h-9 w-9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="1.2"
+      fill="currentColor"
+    />
+
+    <ellipse
+      cx="12"
+      cy="12"
+      rx="10"
+      ry="4"
+      stroke="currentColor"
+      strokeWidth="1.2"
+    />
+
+    <ellipse
+      cx="12"
+      cy="12"
+      rx="10"
+      ry="4"
+      transform="rotate(60 12 12)"
+      stroke="currentColor"
+      strokeWidth="1.2"
+    />
+
+    <ellipse
+      cx="12"
+      cy="12"
+      rx="10"
+      ry="4"
+      transform="rotate(120 12 12)"
+      stroke="currentColor"
+      strokeWidth="1.2"
+    />
   </svg>
 );
 

@@ -139,7 +139,7 @@ export function AboutScreen({
   ];
 
   return (
-    <div className={`min-h-screen ${styles.bg}`}>
+    <div className={`h-full overflow-y-auto ${styles.bg}`}>
 
       {/* Header */}
 

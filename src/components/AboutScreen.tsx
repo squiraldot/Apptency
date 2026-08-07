@@ -139,7 +139,7 @@ export function AboutScreen({
   ];
 
   return (
-    <div className={`h-full overflow-y-auto ${styles.bg}`}>
+    <div className={`absolute inset-0 overflow-y-auto ${styles.bg}`}>
 
       {/* Header */}
 

@@ -894,7 +894,7 @@ export function AboutScreen({
             </h3>
           </div>
 
-          <div className="overflow-hidden">
+          <div className="overflow-hidden py-4">
 
     <div className="opensource-slider">
 
@@ -906,9 +906,18 @@ export function AboutScreen({
             
             <div
                 key={index}
-                className={`opensource-card ${styles.border} ${styles.accent}`}
+                className={`opensource-card ${styles.card} ${styles.border} ${styles.accent}`}
             >
-              <Logo />
+              <div
+    className="flex flex-col items-center justify-center gap-2"
+>
+    <Logo />
+
+    <span className="text-[10px] font-medium opacity-70">
+        {item.name}
+    </span>
+</div>
+              
             </div>
             
             );

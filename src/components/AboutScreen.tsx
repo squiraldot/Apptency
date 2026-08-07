@@ -138,6 +138,37 @@ export function AboutScreen({
     },
   ];
 
+  const openSourceLibraries = [
+  {
+    name: "React",
+    logo: "/logos/react.svg",
+  },
+  {
+    name: "Next.js",
+    logo: "/logos/nextjs.svg",
+  },
+  {
+    name: "TypeScript",
+    logo: "/logos/typescript.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    logo: "/logos/tailwindcss.svg",
+  },
+  {
+    name: "Capacitor",
+    logo: "/logos/capacitor.svg",
+  },
+  {
+    name: "Lucide",
+    logo: "/logos/lucide.svg",
+  },
+  {
+    name: "JSZip",
+    logo: "/logos/jszip.svg",
+  },
+];
+
   return (
     <div className={`absolute inset-0 overflow-y-auto ${styles.bg}`}>
 
@@ -761,32 +792,31 @@ export function AboutScreen({
             </h3>
           </div>
 
-          <div className="space-y-3">
+          <div className="overflow-hidden">
 
-            {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Tailwind CSS",
-              "Capacitor",
-              "Lucide React",
-              "JSZip",
-            ].map((library) => (
-              <div
-                key={library}
-                className={`flex items-center justify-between rounded-2xl border p-3 ${styles.border}`}
-              >
-                <span>{library}</span>
+    <div className="opensource-slider">
 
-                <span
-                  className={`text-xs ${styles.subtext}`}
-                >
-                  Open Source
-                </span>
-              </div>
-            ))}
+        {[...openSourceLibraries, ...openSourceLibraries].map((item, index) => (
 
-          </div>
+            <div
+                key={index}
+                className={`opensource-card ${styles.border}`}
+            >
+
+                <img
+                    src={item.logo}
+                    alt={item.name}
+                    className="h-9 w-9"
+                    draggable={false}
+                />
+
+            </div>
+
+        ))}
+
+    </div>
+
+</div>
         </section>
 
         {/* ===============================

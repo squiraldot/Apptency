@@ -138,34 +138,136 @@ export function AboutScreen({
     },
   ];
 
+  const ReactLogo = () => (
+  <svg
+    viewBox="0 0 256 256"
+    className="h-9 w-9"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="10"
+  >
+    <circle cx="128" cy="128" r="18" fill="currentColor" />
+    <ellipse cx="128" cy="128" rx="90" ry="36" />
+    <ellipse
+      cx="128"
+      cy="128"
+      rx="90"
+      ry="36"
+      transform="rotate(60 128 128)"
+    />
+    <ellipse
+      cx="128"
+      cy="128"
+      rx="90"
+      ry="36"
+      transform="rotate(120 128 128)"
+    />
+  </svg>
+);
+
+  const NextLogo = () => (
+  <svg
+    viewBox="0 0 180 180"
+    className="h-9 w-9"
+    fill="currentColor"
+  >
+    <circle cx="90" cy="90" r="82" fill="none" stroke="currentColor" strokeWidth="10"/>
+    <path d="M60 55v70h10V78l48 47h12V55h-10v47L72 55z"/>
+  </svg>
+);
+
+  const TypeScriptLogo = () => (
+  <svg
+    viewBox="0 0 128 128"
+    className="h-9 w-9"
+    fill="currentColor"
+  >
+    <rect width="128" height="128" rx="18" />
+    <text
+      x="64"
+      y="84"
+      textAnchor="middle"
+      fontSize="54"
+      fontWeight="700"
+      fill="white"
+    >
+      TS
+    </text>
+  </svg>
+);
+
+  const TailwindLogo = () => (
+  <svg
+    viewBox="0 0 48 48"
+    className="h-9 w-9"
+    fill="currentColor"
+  >
+    <path d="M24 14c-5 0-8 2-10 6 3-2 5-2 8-1 2 1 3 4 5 5 3 2 7 1 11-4-2 6-6 9-11 9-5 0-7-3-9-5-2-2-4-3-8 1 2-6 7-11 14-11z"/>
+  </svg>
+);
+
+  const CapacitorLogo = () => (
+  <svg
+    viewBox="0 0 64 64"
+    className="h-9 w-9"
+    fill="currentColor"
+  >
+    <path d="M17 18h9l6 8 6-8h9L37 32l10 14h-9l-6-8-6 8h-9l10-14z"/>
+  </svg>
+);
+
+  const LucideLogo = () => (
+  <svg
+    viewBox="0 0 64 64"
+    className="h-9 w-9"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="5"
+  >
+    <circle cx="32" cy="32" r="22"/>
+    <path d="M32 10v44"/>
+    <path d="M10 32h44"/>
+  </svg>
+);
+
+  const JSZipLogo = () => (
+  <svg
+    viewBox="0 0 64 64"
+    className="h-9 w-9"
+    fill="currentColor"
+  >
+    <path d="M22 8h20v10h-4v6h4v6h-4v6h4v6h-4v14H22z"/>
+  </svg>
+);
+
   const openSourceLibraries = [
   {
     name: "React",
-    logo: "/logos/react.svg",
+    logo: ReactLogo,
   },
   {
     name: "Next.js",
-    logo: "/logos/nextjs.svg",
+    logo: NextLogo,
   },
   {
     name: "TypeScript",
-    logo: "/logos/typescript.svg",
+    logo: TypeScriptLogo,
   },
   {
     name: "Tailwind CSS",
-    logo: "/logos/tailwindcss.svg",
+    logo: TailwindLogo,
   },
   {
     name: "Capacitor",
-    logo: "/logos/capacitor.svg",
+    logo: CapacitorLogo,
   },
   {
     name: "Lucide",
-    logo: "/logos/lucide.svg",
+    logo: LucideLogo,
   },
   {
     name: "JSZip",
-    logo: "/logos/jszip.svg",
+    logo: JSZipLogo,
   },
 ];
 
@@ -796,23 +898,22 @@ export function AboutScreen({
 
     <div className="opensource-slider">
 
-        {[...openSourceLibraries, ...openSourceLibraries].map((item, index) => (
+        {[...openSourceLibraries, ...openSourceLibraries].map((item, index) => {
 
+          const Logo = item.logo;
+
+          return (
+            
             <div
                 key={index}
-                className={`opensource-card ${styles.border} ${styles.accents}`}
+                className={`opensource-card ${styles.border} ${styles.accent}`}
             >
-
-                <img
-                    src={item.logo}
-                    alt={item.name}
-                    className="h-9 w-9 text-current"
-                    draggable={false}
-                />
-
+              <Logo />
             </div>
-
-        ))}
+            
+            );
+          
+        })}
 
     </div>
 

@@ -800,13 +800,13 @@ export function AboutScreen({
 
             <div
                 key={index}
-                className={`opensource-card ${styles.border}`}
+                className={`opensource-card ${styles.border} ${styles.accents}`}
             >
 
                 <img
                     src={item.logo}
                     alt={item.name}
-                    className="h-9 w-9"
+                    className="h-9 w-9 text-current"
                     draggable={false}
                 />
 
